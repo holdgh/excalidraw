@@ -1,0 +1,42 @@
+Excalidraw 本地部署
+
+Excalidraw 是一款轻量的手绘风格电子白板应用，适用于 Windows、macOS 和 Linux 系统。以下是如何在本地部署 Excalidraw 的步骤。
+
+1. 安装 Node.js 和 Git
+
+    下载并安装 Node.js：
+
+2. 克隆 Excalidraw 仓库
+
+    打开命令提示符（Win+R 键，输入“cmd”）
+
+    执行以下命令克隆 Excalidraw 仓库：
+
+git clone https://github.com/holdgh/excalidraw.git
+
+3. 安装 Yarn 和依赖项
+
+    安装 Yarn：
+
+npm install -g yarn
+
+    进入 Excalidraw 目录并安装依赖项：
+
+cd excalidraw
+yarn
+
+4. 启动服务器
+
+    在 Excalidraw 目录中启动服务器：
+
+yarn start
+
+    打开浏览器访问 http://localhost:3000，测试本地连接是否成功
+
+5. 公网远程访问（可选） 如果需要在公网远程访问本地部署的 Excalidraw，可以使用 Cpolar 内网穿透工具。
+
+    安装 Cpolar： 注册并下载 Cpolar：Cpolar 官网 安装完成后，访问 http://localhost:9200 并登录 Cpolar 帐号
+
+    配置公网地址： 创建一个 Excalidraw 的公网 HTTP 地址隧道，设置本地地址为 3000^3^。
+
+通过以上步骤，你可以在本地成功部署并使用 Excalidraw。如果需要远程访问，还可以结合 Cpolar 实现公网访问。
